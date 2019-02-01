@@ -162,6 +162,7 @@ img{
  
  .relative{
     position: relative;
+    margin-top: 20px;
  }
  .absolute{
     position: absolute;
