@@ -107,13 +107,15 @@ img{
     padding-bottom: 1px;
     color: #fff;
 }
+#link {
+    margin-bottom: 5px;
+}
 #link a{
     text-decoration: none;
 }
 #link a:hover{
     text-decoration: none;
 }
-
 
 @media only screen and (max-width: 768px){
  .navbar {
@@ -162,7 +164,6 @@ img{
  
  .relative{
     position: relative;
-    margin-top: 20px;
  }
  .absolute{
     position: absolute;
