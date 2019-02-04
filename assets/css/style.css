@@ -107,13 +107,40 @@ img{
     padding-bottom: 1px;
     color: #fff;
 }
-#link {
+/* #link {
     margin-bottom: 5px;
 }
 #link a{
     text-decoration: none;
 }
 #link a:hover{
+    text-decoration: none;
+} */
+
+#linke {
+    margin-bottom: 5px;
+    width: 20%;
+    height: 200px;
+    float: left;
+    overflow: auto;
+    padding-top: 20px;
+}
+#link #email{
+    width: 35%;
+}
+#linke img{
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+#linke p{
+    text-align: center;
+}
+#linke a{
+    text-decoration: none;
+    padding: 5px;
+}
+#linke a:hover{
     text-decoration: none;
 }
 
@@ -176,6 +203,20 @@ img{
  }   
 .container .jumbotron{
     margin-top: 230px;
+}
+#linke {
+    margin-bottom: 5px;
+    float: none;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+}
+#linke img{
+    display: inline;
+}
+#linke p{
+    display: inline;
 }
 
 }
