@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     var config = {
         apiKey: "AIzaSyASCY_HlKy2Q2QkpkWGYmF-dkuqr-IbGM8",
         authDomain: "updated-portfolio-bf3d0.firebaseapp.com",
@@ -31,5 +30,17 @@ $(document).ready(function(){
 
         });
 
+        $(".navbar a").on("click", function(event){
+            if (this.hash !== '') {
+                event.preventDefault();
+                const hash = this.hash;
+        
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 100
+                },
+                800
+                );
+            }
+        });
    
 });

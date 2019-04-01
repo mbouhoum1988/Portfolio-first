@@ -95,7 +95,13 @@ img{
   #span{
       color: lightcoral;
   }
-
+#portfol{
+    margin-top: -10px;
+    background: whitesmoke;
+}
+#contac{
+    margin-top: -10px;
+}
 .container-fluid{
 
     background: #000;   
@@ -107,15 +113,6 @@ img{
     padding-bottom: 1px;
     color: #fff;
 }
-/* #link {
-    margin-bottom: 5px;
-}
-#link a{
-    text-decoration: none;
-}
-#link a:hover{
-    text-decoration: none;
-} */
 
 #linke {
     margin-bottom: 5px;

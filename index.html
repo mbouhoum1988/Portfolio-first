@@ -4,26 +4,34 @@
     <title>About me</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./assets/javascript/contact.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 </head>
 <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                     <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html"><strong id="man">Mouhoub BOUHOUM</strong></a> 
+                            <a class="navbar-brand" href="#index"><strong id="man">Mouhoub BOUHOUM</strong></a> 
                     </div>    
                 <ul class="nav navbar-nav">
-                    <li id="display"><a href="index.html">About</a></li>
-                    <li id="display"><a href="portfolio.html">Portfolio</a></li>
-                    <li id="display"><a href="contact.html">Contact</a></li>
+                    <li id="display"><a href="#index">About</a></li>
+                    <li id="display"><a href="#portfolio">Portfolio</a></li>
+                    <li id="display"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
           
         <div class="clr"></div>
 
-        <div class="container"> 
+        <div class="container" id="index"> 
                 <div class="jumbotron"> 
                     <div class="page-header">
                     <h1> <span id="span"> About </span> me: </h1>      
@@ -45,41 +53,191 @@
                 </div>
         </div>
 
-        <div class="container">
-            <div class="page-header">
-                <h1> Connect with me </h1>              
-            </div> 
-            
+        <div class="container" id="portfolio"> 
+            <div class="jumbotron" id="portfol"> 
+                <div class="page-header">
+                  <h1><span id="span">Portf</span>olio:</h1>      
+                </div >  
+                <h3 id="click">if you click the link on the image, it will take you to another webpage, is one of my projects </h3>
+                <div class="row">
+                    <div id="try">
+                    <div class="col-md-6" >
+                        <div class="relative">
+                                <img id="imaport" src="assets/images/trivia.jpg">
+                                <div class="absolute" >
+                                   <a href="https://mbouhoum1988.github.io/TriviaGame/" target="_blank">Trivial Trivia</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="relative" id="push">  
+                                <img id="imaport" src="assets/images/crystal.jpg">
+                                <div class="absolute">
+                                   <a href="https://mbouhoum1988.github.io/unit-4-game/" target="_blank">Crystale Game</a>
+                                </div>                          
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                        <div class="col-md-6">
+                          <div class="relative">
+                               <img id="imaport" src="assets/images/giphy.jpg">
+                               <div class="absolute">
+                                <a href="https://mbouhoum1988.github.io/Giphy/" target="_blank">Giphy</a>
+                               </div>
+                          </div>     
+                        </div>
+                        <div class="col-md-6">
+                               <div class="relative" id="push">
+                                    <img id="imaport" src="assets/images/nat.jpg">
+                                    <div class="absolute">
+                                        <a href="https://mbouhoum1988.github.io/Train-Arrivals/" target="_blank">Train Data</a>
+                                    </div>
+                               </div> 
+                        </div>
+                </div>
+                 <div class="row">
+                        <div class="col-md-6">
+                           <div class="relative"> 
+                                <img id="imaport" src="assets/images/sport.jpg">
+                                <div class="absolute">
+                                    <a href="https://beshoyr4.github.io/Project-1/" target="_blank">Sports</a>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                            <div class="relative" id="push"> 
+                                <img id="imaport" src="assets/images/resume.jpg">
+                                <div class="absolute">
+                                    <a href="https://drive.google.com/file/d/1tDic-GM1-ObLWa__tikRseF_HpjAhp9l/view?usp=sharing" target="_blank">Resume</a>
+                                </div>
+                            </div>
+                       </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                       <div class="relative"> 
+                            <img id="imaport" src="assets/images/node.jpg">
+                            <div class="absolute">
+                                <a href="https://github.com/mbouhoum1988/liri-node-app" target="_blank">Node.js</a>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                        <div class="relative" id="push"> 
+                            <img id="imaport" src="assets/images/mysql.jpg">
+                            <div class="absolute">
+                                <a href="https://github.com/mbouhoum1988/bamazon" target="_blank">Node Mysql</a>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+
+               <div class="row">
+                <div class="col-md-6">
+                   <div class="relative"> 
+                    <img id="imaport" src="assets/images/express.jpg">
+                        <div class="absolute">
+                            <a href="https://mouhoubfriendfinder.herokuapp.com/" target="_blank">friend finder express.js</a>
+                        </div>
+                   </div>
+               </div>
+
+               <div class="col-md-6">
+                    <div class="relative"> 
+                        <img id="imaport" src="assets/images/handlebars.jpg">
+                        <div class="absolute">
+                            <a href="https://mhbhandle.herokuapp.com/" target="_blank">handlebars</a>
+                        </div>
+                    </div>
+                </div>
+
+               </div>
+                   
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="relative"> 
+                                <img id="imaport" src="assets/images/food.jpg">
+                                <div class="absolute">
+                                    <a href="https://mbfood.herokuapp.com/" target="_blank">FOOD, INC</a>
+                                </div>
+                        </div>
+                    </div>
+               </div>
+        </div>                
+        </div>            
+
+        <div class="container" id="contact"> 
+            <div class="jumbotron" id="contac"> 
+                <div class="page-header">
+                    <h1> <span id="span"> Contact </span>Us: </h1>
+                </div>  
+                <form>   
+                <div class="form-group">
+                        <label for="Name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="text">
+                </div>
+    
+                <div class="form-group">
+                        <label for="email">email:</label>
+                        <input type="Email" class="form-control" id="email" placeholder="Enter Email" name="Email">
+                </div>
+    
+                <div class="form-group">
+                        <label>Message:</label>
+                        <textarea type="textarea" class="form-control" id="message" placeholder="Message">
+                        </textarea>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                </form>          
+            </div>
+        </div>
+
+    </div>  
+
+    <div class="container">
+        <div class="page-header">
+            <h1> Connect with me </h1>              
+        </div> 
+        
         <div class="col-md-8" id="linke">
                 <img  src="assets/images\in.jpg" class="social" alt="linked" >
-                  <a href="https://www.linkedin.com/in/mouhoub-bouhoum-41573413a/" target="_blank"><p>mouhoub bouhoum</p>  </a>
+                <a href="https://www.linkedin.com/in/mouhoub-bouhoum-41573413a/" target="_blank"><p>mouhoub bouhoum</p>  </a>
         </div>  
 
         <div class="col-md-12" id="linke"> 
                 <img src="assets/images\git.jpg" class="social" alt="github" >
                 <a href="https://github.com/mbouhoum1988?tab=repositories" target="_blank"> <p> mbouhoum1988 </p></a>
         </div>
-      
+    
         <div class="col-md-12" id="linke">
                 <img src="assets/images\stack.jpg" class="social" alt="stack overflow">
                         <a href="https://stackoverflow.com/users/10576763/b-mouhoub" target="_blank"> <p> m bouhoum </p></a>
         </div>
-    
+
         <div class="col-md-12"  id="linke">
             <img src="assets/images\gmail.jpg" class="social" id="email" alt="gmail" >
-          <a href="#"> <p> mbouhoum1988@gmail.com </p>  </a>
+        <a href="#"> <p> mbouhoum1988@gmail.com </p>  </a>
         </div>
 
         <div class="col-md-12" id="linke">
             <img src="assets/images\phone.jpg" class="social" alt="phone" >
-           <a href="#"> <p>(913) 272 6973</p> </a> 
+        <a href="#"> <p>(913) 272 6973</p> </a> 
         </div>
+    </div>
 
-    </div>  
-        <div class="container-fluid"> 
-          <div class="card-footer">
-                copyright &copy;
-          </div>  
-        </div>             
+    <div class="container-fluid"> 
+        <div class="card-footer">
+            copyright &copy;
+        </div>  
+    </div>             
 </body>
 </html>
