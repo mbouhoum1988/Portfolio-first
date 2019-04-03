@@ -20,13 +20,15 @@ $(document).ready(function(){
         var add = {
             name : name,
             email : email,
-            message : message,
-            dataAdded: firebase.database.ServerValue.TIMESTAM
+            message : message
         }
         database.ref().push(add);
     });
         database.ref().on("child_added", function(snapshot){
             var sp = snapshot.val();
+            var addName = sp.name;
+            var addEmail = sp.email;
+            var addMessage = sp.message;
 
         });
 
