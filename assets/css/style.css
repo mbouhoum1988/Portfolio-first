@@ -132,6 +132,7 @@ img{
 }
 #linke p{
     text-align: center;
+    margin-top: 8px;
 }
 #linke a{
     text-decoration: none;
@@ -139,6 +140,11 @@ img{
 }
 #linke a:hover{
     text-decoration: none;
+}
+
+#resume{
+    background: none;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 768px){

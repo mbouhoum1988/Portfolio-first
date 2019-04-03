@@ -4,7 +4,7 @@ $(document).ready(function(){
         authDomain: "updated-portfolio-bf3d0.firebaseapp.com",
         databaseURL: "https://updated-portfolio-bf3d0.firebaseio.com",
         projectId: "updated-portfolio-bf3d0",
-        storageBucket: "",
+        storageBucket: "updated-portfolio-bf3d0.appspot.com",
         messagingSenderId: "904374058202"
       };
       firebase.initializeApp(config);
