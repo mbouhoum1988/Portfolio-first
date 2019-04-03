@@ -24,14 +24,7 @@ $(document).ready(function(){
         }
         database.ref().push(add);
     });
-        database.ref().on("child_added", function(snapshot){
-            var sp = snapshot.val();
-            var addName = sp.name;
-            var addEmail = sp.email;
-            var addMessage = sp.message;
-
-        });
-
+      
         $(".navbar a").on("click", function(event){
             if (this.hash !== '') {
                 event.preventDefault();
